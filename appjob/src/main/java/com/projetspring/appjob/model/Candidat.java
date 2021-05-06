@@ -16,6 +16,8 @@ public class Candidat extends Utilisateur {
     private int id;
     private boolean permisB;
     private boolean disponible;
+    private String intitule;
+    private boolean visible;
 
     @ManyToMany
     @JoinTable(name = "langue_candidat",
@@ -35,6 +37,23 @@ public class Candidat extends Utilisateur {
             inverseJoinColumns = @JoinColumn(name = "id_diplome"))
     private List<Diplome> listeDiplomes;
 
-    @OneToMany(mappedBy = "candidat")
-    private List<ProfilCandidat> listeProfilCandidats;
+    @ManyToMany
+    @JoinTable(name = "experience_candidat",
+            joinColumns = @JoinColumn(name = "id_candidat" ),
+            inverseJoinColumns = @JoinColumn(name = "id_experience"))
+    private List<Experience> listeExperiences;
+
+    @ManyToMany
+    @JoinTable(name = "annonce_candidat",
+            joinColumns = @JoinColumn(name = "id_candidat" ),
+            inverseJoinColumns = @JoinColumn(name = "id_annonce"))
+    private List<Annonce> listeAnnonces;
+
+    @ManyToOne
+    @JoinColumn(name = "id_fonction")
+    private Fonction fonction;
+
+    @ManyToOne
+    @JoinColumn(name = "id_domaine")
+    private DomaineActivite domaineActivite;
 }
