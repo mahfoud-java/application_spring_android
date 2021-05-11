@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3b770e51-3aa5-49b1-aeab-0ecfdcc1f22d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Annonce.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Annonce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Candidat.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Candidat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Diplome.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Diplome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/DomaineActivite.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Formation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Experience.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Experience.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Fonction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Langue.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Competence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Niveau.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Niveau.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Recruteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Entreprise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Secteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Secteur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/TypeEmploi.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/TypeEmploi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Utilisateur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagramm_class_mobile_app2.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1sNj5ru3zeTaDuihYBXpyJd6Plf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b770e51-3aa5-49b1-aeab-0ecfdcc1f22d" name="Default Changelist" comment="" />
+      <created>1620719760694</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620719760694</updated>
+    </task>
+    <servers />
+  </component>
+</project>

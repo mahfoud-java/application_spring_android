@@ -1,5 +1,6 @@
 package com.projetspring.appjob.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
@@ -14,8 +15,11 @@ public class TypeEmploi {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private String denomination;
+    private String nomTypeEmploi;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "typeEmploi")
     private List<Annonce> listeAnnonces;
+
+
 }

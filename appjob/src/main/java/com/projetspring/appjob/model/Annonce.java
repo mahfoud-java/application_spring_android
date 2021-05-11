@@ -14,31 +14,30 @@ public class Annonce {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String intitule;
-    private String descriptif;
+
+    @Column(columnDefinition = "TEXT")
+    private String descriptifDuPoste;
+
     private Date datePublication;
+    private int salaire;
+    private int nbPostes;
 
-    @ManyToOne
-    @JoinColumn(name = "id_secteur")
-    private Secteur secteur;
-
-    @ManyToOne
-    @JoinColumn(name = "id_domaineActivite")
-    private DomaineActivite domaineActivite;
 
     @ManyToOne
     @JoinColumn(name = "id_typeEmploi")
     private TypeEmploi typeEmploi;
 
-    @ManyToOne
-    @JoinColumn(name = "id_fonction")
-    private Fonction fonction;
 
     @ManyToOne
-    @JoinColumn(name = "id_niveau")
-    private Niveau niveau;
+    @JoinColumn(name = "id_diplome")
+    private Diplome diplome;
 
     @ManyToOne
-    @JoinColumn(name = "id_recruteur")
-    private Recruteur recruteur;
+    @JoinColumn(name = "id_entreprise")
+    private Entreprise entreprise;
+
+    @ManyToOne
+    @JoinColumn(name = "id_candidat")
+    private Candidat candidat;
 
 }

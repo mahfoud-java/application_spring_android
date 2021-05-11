@@ -14,16 +14,11 @@ public class Candidat extends Utilisateur {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    private String nom;
+    private String prenom;
+    private String nomProfil;
     private boolean permisB;
     private boolean disponible;
-    private String intitule;
-    private boolean visible;
-
-    @ManyToMany
-    @JoinTable(name = "langue_candidat",
-            joinColumns = @JoinColumn(name = "id_candidat" ),
-            inverseJoinColumns = @JoinColumn(name = "id_langue"))
-    private List<Langue> listeLangues;
 
     @ManyToMany
     @JoinTable(name = "type_emploi_candidat",
@@ -31,29 +26,19 @@ public class Candidat extends Utilisateur {
             inverseJoinColumns = @JoinColumn(name = "id_type_emploi"))
     private List<TypeEmploi> listeTypeEmplois;
 
-    @ManyToMany
-    @JoinTable(name = "diplome_candidat",
-            joinColumns = @JoinColumn(name = "id_candidat" ),
-            inverseJoinColumns = @JoinColumn(name = "id_diplome"))
-    private List<Diplome> listeDiplomes;
-
-    @ManyToMany
-    @JoinTable(name = "experience_candidat",
-            joinColumns = @JoinColumn(name = "id_candidat" ),
-            inverseJoinColumns = @JoinColumn(name = "id_experience"))
-    private List<Experience> listeExperiences;
-
-    @ManyToMany
-    @JoinTable(name = "annonce_candidat",
-            joinColumns = @JoinColumn(name = "id_candidat" ),
-            inverseJoinColumns = @JoinColumn(name = "id_annonce"))
+    @OneToMany(mappedBy = "candidat")
     private List<Annonce> listeAnnonces;
 
-    @ManyToOne
-    @JoinColumn(name = "id_fonction")
-    private Fonction fonction;
 
-    @ManyToOne
-    @JoinColumn(name = "id_domaine")
-    private DomaineActivite domaineActivite;
+    @OneToMany(mappedBy = "candidat")
+    private List<Competence> listeCompetences;
+
+
+    @OneToMany(mappedBy = "candidat")
+    private List<Experience> listeExperiences;
+
+
+    @OneToMany(mappedBy = "candidat")
+    private List<Formation> listeFormations;
+
 }

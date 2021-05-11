@@ -1,5 +1,6 @@
 package com.projetspring.appjob.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import javax.persistence.*;
@@ -13,17 +14,15 @@ public class Utilisateur {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String email;
+
+    @JsonIgnore
     private String password;
-    private String nom;
-    private String prenom;
-    private String adresse;
+
     private String ville;
     private String pays;
-    private Long codePostal;
+    private int codePostal;
 
     @ManyToOne
     @JoinColumn(name = "id_role")
     private Role role;
-
-
 }

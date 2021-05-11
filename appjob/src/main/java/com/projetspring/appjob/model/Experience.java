@@ -1,5 +1,6 @@
 package com.projetspring.appjob.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
@@ -13,13 +14,16 @@ public class Experience {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String poste;
-    private String organisme;
+    private String nomPoste;
+    private String nomEntreprise;
     private Date debut;
     private Date fin;
-    private String descriptif;
+    private String descriptifDuPoste;
     private String ville;
     private String pays;
-    private Long codePostal;
 
+    @JsonIgnore
+    @ManyToOne
+    @JoinColumn(name = "id_candidat")
+    private Candidat candidat;
 }

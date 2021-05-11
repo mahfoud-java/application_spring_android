@@ -9,13 +9,11 @@ import java.util.List;
 @Entity
 @Data
 @EntityListeners(AuditingEntityListener.class)
-public class Fonction {
+public class Niveau {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private String intitule;
+    private String nomNiveau;
 
-    @OneToMany(mappedBy = "fonction")
-    private List<Annonce> listeAnnonces;
 }
