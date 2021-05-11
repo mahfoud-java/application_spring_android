@@ -4,20 +4,18 @@ import lombok.Data;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
-import java.sql.Date;
+import java.util.List;
 
 @Entity
 @Data
 @EntityListeners(AuditingEntityListener.class)
-public class Diplome{
+public class Niveau {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String intitule;
-    private String organisme;
-    private Date dateObtention;
 
-    @ManyToOne
-    @JoinColumn(name = "id_niveau")
-    private Niveau niveau;
+    private String denomination;
+
+    @OneToMany(mappedBy = "niveau")
+    private List<Annonce> listeAnnonces;
 }
