@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Simply Job</string>
+    <string name="url_spring">http://10.0.2.2:8082/</string>
+
+</resources>

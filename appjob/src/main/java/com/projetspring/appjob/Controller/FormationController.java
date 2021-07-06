@@ -1,13 +1,12 @@
 package com.projetspring.appjob.Controller;
 
 
+import com.fasterxml.jackson.annotation.JsonView;
 import com.projetspring.appjob.dao.DaoFormation;
-import com.projetspring.appjob.dao.DaoUtilisateur;
 import com.projetspring.appjob.model.Formation;
+import com.projetspring.appjob.viewJson.MyJsonView;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,9 +21,17 @@ public class FormationController {
 
         this.daoFormation = daoFormation;
     }
+@DeleteMapping("del/formation/{id}")
+public boolean effacerFormation(@PathVariable int id){
+        daoFormation.deleteById(id);
+        return true;
+}
 
-    @GetMapping("/formations")
-    public List<Formation> listerFormationCandidat() {
-        return daoFormation.findAll();
+    @PostMapping("add/formation")
+    public boolean listerFormationCandidat(@RequestBody Formation formation) {
+
+       daoFormation.save(formation);
+
+       return true;
     }
 }

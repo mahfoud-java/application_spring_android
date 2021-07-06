@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="liste_diplome">
+        <item>BEP / CAP</item>
+        <item>BAC</item>
+        <item>DUT / DEUG / BTS</item>
+        <item>LICENCE</item>
+        <item>MASTER</item>
+        <item>DOCTORAT</item>
+
+    </string-array>
+</resources>

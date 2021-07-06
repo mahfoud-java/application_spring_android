@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface DaoCandidat extends JpaRepository<Candidat,Integer> {
-    Candidat findByMonProfil(String profil);
+
 
 }

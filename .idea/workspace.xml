@@ -2,20 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b770e51-3aa5-49b1-aeab-0ecfdcc1f22d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Annonce.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Annonce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/Controller/AnnonceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/Controller/AnnonceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/Controller/CandidatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/Controller/CandidatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/Controller/FormationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/Controller/FormationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/Controller/UtilisateurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/Controller/UtilisateurController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/dao/DaoCandidat.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/dao/DaoCandidat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/dao/DaoUtilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/dao/DaoUtilisateur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Candidat.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Candidat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Competence.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Competence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Diplome.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Diplome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/DomaineActivite.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Formation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Entreprise.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Entreprise.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Experience.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Experience.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Fonction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Langue.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Competence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Formation.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Formation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Niveau.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Niveau.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Recruteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Entreprise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Secteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Secteur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/TypeEmploi.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/TypeEmploi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/java/com/projetspring/appjob/model/Utilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagramm_class_mobile_app2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appjob/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/appjob/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +37,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/appjob" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="3b770e51-3aa5-49b1-aeab-0ecfdcc1f22d" name="Default Changelist" comment="" />

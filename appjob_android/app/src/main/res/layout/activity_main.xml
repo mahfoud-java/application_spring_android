@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/background_appjob2"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center|top"
+        android:text="SIMPLY ' JOB"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="email ..."
+        android:inputType="textEmailAddress"
+        android:text="admin@gmail.com"
+        android:textColorHighlight="@color/black"
+        android:textColorLink="@color/black" />
+
+    <EditText
+        android:id="@+id/text_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="password ..."
+        android:inputType="textPassword"
+        android:textColorHighlight="@color/black"
+        android:textColorLink="@color/black"
+        android:textCursorDrawable="@color/black" />
+
+    <Button
+        android:id="@+id/button_connexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Connexion" />
+</LinearLayout>

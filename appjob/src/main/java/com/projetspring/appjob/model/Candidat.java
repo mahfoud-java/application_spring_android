@@ -1,5 +1,7 @@
 package com.projetspring.appjob.model;
 
+import com.fasterxml.jackson.annotation.JsonView;
+import com.projetspring.appjob.viewJson.MyJsonView;
 import lombok.Data;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
@@ -12,32 +14,28 @@ import java.util.List;
 public class Candidat extends Utilisateur {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    
     private String nom;
+    
     private String prenom;
+    
     private String nomProfil;
+    
     private boolean permisB;
+    
     private boolean disponible;
 
-    @ManyToMany
-    @JoinTable(name = "type_emploi_candidat",
-            joinColumns = @JoinColumn(name = "id_candidat" ),
-            inverseJoinColumns = @JoinColumn(name = "id_type_emploi"))
-    private List<TypeEmploi> listeTypeEmplois;
 
-    @OneToMany(mappedBy = "candidat")
-    private List<Annonce> listeAnnonces;
-
-
+    
     @OneToMany(mappedBy = "candidat")
     private List<Competence> listeCompetences;
 
-
+    
     @OneToMany(mappedBy = "candidat")
     private List<Experience> listeExperiences;
 
-
+    @JsonView(MyJsonView.VueCandidat.class)
     @OneToMany(mappedBy = "candidat")
     private List<Formation> listeFormations;
 

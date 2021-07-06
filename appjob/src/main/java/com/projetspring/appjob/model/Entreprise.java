@@ -1,8 +1,5 @@
 package com.projetspring.appjob.model;
 
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import lombok.Data;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
@@ -12,7 +9,7 @@ import java.util.List;
 @Entity
 @Data
 @EntityListeners(AuditingEntityListener.class)
-public class Entreprise extends Utilisateur {
+public class Entreprise {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -20,11 +17,14 @@ public class Entreprise extends Utilisateur {
 
     private String descriptifEntreprise;
 
+    private String type;
+
+    private int taille;
+
     @ManyToOne
     @JoinColumn(name = "id_secteur")
     private Secteur secteur;
 
-    @JsonIgnore
     @OneToMany(mappedBy = "entreprise")
     private List<Annonce> listeAnnonces;
 }

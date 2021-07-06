@@ -12,7 +12,7 @@ import java.sql.Date;
 public class Annonce {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
     private String intitule;
 
     @Column(columnDefinition = "TEXT")
@@ -35,9 +35,5 @@ public class Annonce {
     @ManyToOne
     @JoinColumn(name = "id_entreprise")
     private Entreprise entreprise;
-
-    @ManyToOne
-    @JoinColumn(name = "id_candidat")
-    private Candidat candidat;
 
 }
