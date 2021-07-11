@@ -1,0 +1,16 @@
+INSERT INTO `utilisateur` (`email`,`identite`,`lieu`,`nom_entreprise`,`password`) VALUES
+('admin@gmail.com','John Smith','Metz','Interflora','$2a$10$IA7K00YoQeeZaHkVEaLypuo3thUs97fKuWsNA5P7kzE/ZBk4iUYwy'),
+('userCandidat@gmail.com','John Smith','Metz','Interflora','$2a$10$qjFBdIE2tO9fMZOUITAZ2.QkURi9ra60XOYBIHmfgwK/oCpExDiWG');
+
+INSERT INTO `diplome` (`denomination`) VALUES ('BEP CAP'),('BAC'),('BTS DUT'),('LICENCE'),('MASTER'),('DOCTORAT');
+
+INSERT INTO `annonce` (`descriptif_du_poste`,`intitule`,`salaire`,`id_diplome`)
+VALUES ('Etudier et définir, conjointement avec un Expert, la conception technique des développements à réaliser\nDévelopper les fonctionnalités Back et Front\nParticiper aux cérémonies agiles, sprint planning, daily, démo et rétro\nRéaliser les tests automatiques et la documentation technique\nStack technique de l’entreprise : Java, J2EE, JEE, Spring, Angular, AngularJS, Javascript (Vue, React…), Eclipse, SpringBoot','Magasinier H / F',1200,1),
+ ('Recrute instituteur(H/F) pour enseigner des savoirs de bases ( Math, grammaire....etc.) à des élèves en classe de CE1 à CM2(30 à 62 enfants entre 7 et 10 ans ). Activité du Lundi au Vendredi de 08h à 12h00','Developpeur H / F',1700,2),
+('Etudier et définir, conjointement avec un Expert, la conception technique des développements à réaliser\nDévelopper les fonctionnalités Back et Front\nParticiper aux cérémonies agiles, sprint planning, daily, démo et rétro\nRéaliser les tests automatiques et la documentation technique\nStack technique de l’entreprise : Java, J2EE, JEE, Spring, Angular, AngularJS, Javascript (Vue, React…), Eclipse, SpringBoot','Vendeur H / F',1100,3),
+ ('Etudier et définir, conjointement avec un Expert, la conception technique des développements à réaliser\nDévelopper les fonctionnalités Back et Front\nParticiper aux cérémonies agiles, sprint planning, daily, démo et rétro\nRéaliser les tests automatiques et la documentation technique\nStack technique de l’entreprise : Java, J2EE, JEE, Spring, Angular, AngularJS, Javascript (Vue, React…), Eclipse, SpringBoot','Manager H / F',2000,4),
+ ('Etudier et définir, conjointement avec un Expert, la conception technique des développements à réaliser\nDévelopper les fonctionnalités Back et Front\nParticiper aux cérémonies agiles, sprint planning, daily, démo et rétro\nRéaliser les tests automatiques et la documentation technique\nStack technique de l’entreprise : Java, J2EE, JEE, Spring, Angular, AngularJS, Javascript (Vue, React…), Eclipse, SpringBoot','Mecanicien H / F',1400,5),
+ ('Etudier et définir, conjointement avec un Expert, la conception technique des développements à réaliser\nDévelopper les fonctionnalités Back et Front\nParticiper aux cérémonies agiles, sprint planning, daily, démo et rétro\nRéaliser les tests automatiques et la documentation technique\nStack technique de l’entreprise : Java, J2EE, JEE, Spring, Angular, AngularJS, Javascript (Vue, React…), Eclipse, SpringBoot','Fleuriste H / F',1280,6);
+
+ INSERT INTO `role` (`nom_role`) VALUES ('ROLE_ADMIN'),('ROLE_CANDIDAT'),('ROLE_EMPLOYEUR');
+ INSERT INTO `role_utilisateur` VALUES (1,1),(1,2);

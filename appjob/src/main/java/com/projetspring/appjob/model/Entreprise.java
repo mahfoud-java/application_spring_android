@@ -17,14 +17,8 @@ public class Entreprise {
 
     private String descriptifEntreprise;
 
-    private String type;
-
     private int taille;
 
-    @ManyToOne
-    @JoinColumn(name = "id_secteur")
-    private Secteur secteur;
 
-    @OneToMany(mappedBy = "entreprise")
-    private List<Annonce> listeAnnonces;
+
 }

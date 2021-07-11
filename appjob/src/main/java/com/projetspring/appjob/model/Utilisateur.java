@@ -20,6 +20,10 @@ public class Utilisateur {
 
     private String password;
 
+    private String identite;
+    private String nomEntreprise;
+    private String lieu;
+
     @ManyToMany
     @JoinTable(name = "role_utilisateur",
             joinColumns = @JoinColumn(name = "id_utilisateur" ),

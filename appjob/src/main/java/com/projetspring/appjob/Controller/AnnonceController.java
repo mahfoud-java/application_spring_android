@@ -44,7 +44,6 @@ else{
     Optional<Annonce> annonceBdd = daoAnnonce.findById(annonce.getId());
     annonceBdd.get().setIntitule(annonce.getIntitule());
     annonceBdd.get().setDescriptifDuPoste(annonce.getDescriptifDuPoste());
-    annonceBdd.get().setNbPostes(annonce.getNbPostes());
     annonceBdd.get().setSalaire(annonce.getSalaire());
     annonceBdd.get().setDiplome(annonce.getDiplome());
 daoAnnonce.save(annonceBdd.get());

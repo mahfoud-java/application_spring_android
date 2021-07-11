@@ -11,7 +11,7 @@ public class Annonce implements Serializable {
 
     private String intitule;
     private String description;
-    private Integer nbPoste;
+
     private Integer salaire;
 
     private Diplome diplome;
@@ -20,7 +20,7 @@ public class Annonce implements Serializable {
         id = jsonObject.getInt("id");
         intitule = jsonObject.getString("intitule");
         description = jsonObject.getString("descriptifDuPoste");
-        nbPoste = jsonObject.getInt("nbPostes");
+
         salaire = jsonObject.getInt("salaire");
 
 
@@ -37,7 +37,7 @@ public class Annonce implements Serializable {
         jsonAnnonce.put("id",this.getId());
         jsonAnnonce.put("intitule",this.getIntitule());
         jsonAnnonce.put("descriptifDuPoste",this.getDescription());
-        jsonAnnonce.put("nbPostes", this.getNbPoste());
+
         jsonAnnonce.put("salaire",this.getSalaire());
         jsonAnnonce.put("diplome",diplome.toJson());
 
@@ -76,13 +76,6 @@ public class Annonce implements Serializable {
         this.diplome = diplome;
     }
 
-    public Integer getNbPoste() {
-        return nbPoste;
-    }
-
-    public void setNbPoste(Integer nbPoste) {
-        this.nbPoste = nbPoste;
-    }
 
     public Integer getSalaire() {
         return salaire;

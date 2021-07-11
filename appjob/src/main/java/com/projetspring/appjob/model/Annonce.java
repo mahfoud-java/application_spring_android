@@ -18,22 +18,12 @@ public class Annonce {
     @Column(columnDefinition = "TEXT")
     private String descriptifDuPoste;
 
-    private Date datePublication;
     private int salaire;
-    private int nbPostes;
-
-
-    @ManyToOne
-    @JoinColumn(name = "id_typeEmploi")
-    private TypeEmploi typeEmploi;
-
 
     @ManyToOne
     @JoinColumn(name = "id_diplome")
     private Diplome diplome;
 
-    @ManyToOne
-    @JoinColumn(name = "id_entreprise")
-    private Entreprise entreprise;
+
 
 }

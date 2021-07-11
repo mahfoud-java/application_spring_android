@@ -21,9 +21,6 @@ public class Diplome {
     
     private String denomination;
 
-   @JsonIgnore
-    @OneToMany(mappedBy = "diplome")
-    private List<Annonce> listeAnnonces;
 
 
 }

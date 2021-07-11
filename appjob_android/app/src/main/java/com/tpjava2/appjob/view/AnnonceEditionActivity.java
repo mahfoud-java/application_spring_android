@@ -87,7 +87,7 @@ public class AnnonceEditionActivity extends AppCompatActivity {
         textViewDescriptionAnnonce.setText(annonce.getDescription());
         textViewIntituleAnnonce.setText(annonce.getIntitule()+" H/F");
         textViewSalaireAnnonce.setText("Salaire du poste : "+String.valueOf(annonce.getSalaire())+" $");
-        textViewNbPosteAnnonce.setText("Nombre de postes à pourvoir : "+String.valueOf(annonce.getNbPoste()));
+
         textViewDiplomeAnnonce.setText("Niveau exigé pour le poste : "+annonce.getDiplome().getDenomination());
     }
 }

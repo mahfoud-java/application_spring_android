@@ -1,0 +1,7 @@
+INFORMATIONS SUR LE TP MOBILE IFA
+
+-nom base de donnée : appjob1
+-port 82
+-les insertions sont réalisés par SPRING via le fichier "data_mysql.sql"
+-connection : email admin@gmail.com
+	      password : root

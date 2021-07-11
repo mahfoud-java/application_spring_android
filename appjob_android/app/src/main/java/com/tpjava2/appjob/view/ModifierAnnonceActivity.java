@@ -24,7 +24,7 @@ public class ModifierAnnonceActivity extends AppCompatActivity {
     private Annonce annonce;
     private EditText intitule;
     private EditText description;
-    private EditText nbPoste;
+
     private EditText salaire;
     private Spinner spinnerModif;
     private BottomAppBar bottomAppBarModif;
@@ -40,8 +40,7 @@ public class ModifierAnnonceActivity extends AppCompatActivity {
         description = findViewById(R.id.editText_descriptif);
         description.setText(annonce.getDescription(), null);
 
-        nbPoste = findViewById(R.id.editText_n_poste);
-        nbPoste.setText(""+annonce.getNbPoste(), null);
+
 
         salaire = findViewById(R.id.editText_salaires);
         salaire.setText(""+annonce.getSalaire(), null);
@@ -72,7 +71,7 @@ bottomAppBarModif = findViewById(R.id.bottomAppBar_modif);
             if(menuItem.getItemId() == R.id.menuItem_save){
                 annonce.setIntitule(intitule.getText().toString());
                 annonce.setDescription(description.getText().toString());
-                annonce.setNbPoste(Integer.valueOf(nbPoste.getText().toString()));
+
                 annonce.setSalaire(Integer.valueOf(salaire.getText().toString()));
 
                 try {

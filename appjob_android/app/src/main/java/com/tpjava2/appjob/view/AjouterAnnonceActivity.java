@@ -75,7 +75,7 @@ public class AjouterAnnonceActivity extends AppCompatActivity {
 
                 annonce.setIntitule(editTextIntitule.getText().toString());
                 annonce.setDescription(editTextDescription.getText().toString());
-                annonce.setNbPoste(Integer.valueOf(editTextNbPoste.getText().toString()));
+
                 annonce.setSalaire(Integer.valueOf(editTextSalaire.getText().toString()));
 
                 try {
